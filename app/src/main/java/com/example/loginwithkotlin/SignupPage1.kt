@@ -44,11 +44,11 @@ class SignupPage1 : AppCompatActivity() {
 
         findViewById<ImageView>(R.id.add_picture).setOnClickListener()
         {
-            startActivity(Intent(this,SignupPage2::class.java))
+            startActivity(Intent(this,AddPropfilePicture::class.java))
         }
         findViewById<ImageView>(R.id.add_image_link_icon).setOnClickListener()
         {
-            startActivity(Intent(this,SignupPage2::class.java))
+            startActivity(Intent(this,AddPropfilePicture::class.java))
         }
     }
 }
