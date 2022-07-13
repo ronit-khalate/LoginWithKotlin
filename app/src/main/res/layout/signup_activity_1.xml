@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/jt_marnie_extrabold"
+        android:text="New \nAccount"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.359"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/add_picture"
+        android:layout_width="93dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="28dp"
+        android:clickable="true"
+        android:src="@drawable/circle_removebg"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"/>
+
+    <ImageView
+        android:id="@+id/add_image_link_icon"
+        android:layout_width="52dp"
+        android:layout_height="45dp"
+        android:clickable="true"
+        android:src="@drawable/link"
+        app:layout_constraintBottom_toBottomOf="@+id/add_picture"
+        app:layout_constraintEnd_toEndOf="@+id/add_picture"
+        app:layout_constraintStart_toStartOf="@+id/add_picture"
+        app:layout_constraintTop_toTopOf="@+id/add_picture" />
+
+    <TextView
+        android:id="@+id/add_image_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:text="Upload a profile picture \n(optional)"
+        android:textColor="@color/textgrey"
+        app:layout_constraintBottom_toBottomOf="@+id/add_picture"
+        app:layout_constraintStart_toEndOf="@+id/add_picture"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.389" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="232dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:hint="Name"
+        android:gravity="top"
+        android:textColor="@color/vivid_orange"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/add_image_message"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/add_picture"
+        app:layout_constraintTop_toBottomOf="@+id/add_picture" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="232dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:hint="User name"
+        android:textColor="@color/vivid_orange"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/editText3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="291dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/login_button1"
+        android:backgroundTint="@color/dark_black"
+        android:fontFamily="@font/jt_marnie_extrabold"
+        android:text="Next"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/editText4"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/editText4"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+
+    <TextView
+        android:id="@+id/dontHaveAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/jt_marnie_light"
+        android:text=" Not first time here?"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/next"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="@+id/next"
+        app:layout_constraintTop_toBottomOf="@+id/next" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:fontFamily="@font/jt_marnie_extrabold"
+        android:text=" Log in."
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/next"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toStartOf="@+id/next"
+        app:layout_constraintTop_toBottomOf="@+id/next" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LoginWithKotlin</string>
+    <string name="start">Start</string>
+    <string name="your">your</string>
+    <string name="ad">adventure</string>
+    <string name="login">Log in</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Ronit/AndroidDevelopmentCourse/LoginWithKotlin/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.202" />
+        <entry key="..\:/Users/Ronit/AndroidDevelopmentCourse/LoginWithKotlin/app/src/main/res/drawable/avtar.xml" value="0.1" />
+        <entry key="..\:/Users/Ronit/AndroidDevelopmentCourse/LoginWithKotlin/app/src/main/res/drawable/costom_button.xml" value="0.1" />
+        <entry key="..\:/Users/Ronit/AndroidDevelopmentCourse/LoginWithKotlin/app/src/main/res/drawable/ic_launcher_background.xml" value="0.202" />
+        <entry key="..\:/Users/Ronit/AndroidDevelopmentCourse/LoginWithKotlin/app/src/main/res/drawable/login_button1.xml" value="0.2205" />
+        <entry key="..\:/Users/Ronit/AndroidDevelopmentCourse/LoginWithKotlin/app/src/main/res/drawable/login_usename_edittext_icon.xml" value="0.1" />
+        <entry key="..\:/Users/Ronit/AndroidDevelopmentCourse/LoginWithKotlin/app/src/main/res/drawable/loging_page_back_graund.xml" value="0.141" />
+        <entry key="..\:/Users/Ronit/AndroidDevelopmentCourse/LoginWithKotlin/app/src/main/res/drawable/planet_background.xml" value="0.137" />
+        <entry key="..\:/Users/Ronit/AndroidDevelopmentCourse/LoginWithKotlin/app/src/main/res/drawable/usernamr_avatar_background.xml" value="0.141" />
+        <entry key="..\:/Users/Ronit/AndroidDevelopmentCourse/LoginWithKotlin/app/src/main/res/layout/activity_main.xml" value="0.2359375" />
+        <entry key="..\:/Users/Ronit/AndroidDevelopmentCourse/LoginWithKotlin/app/src/main/res/layout/login.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Ronit/AndroidDevelopmentCourse/LoginWithKotlin/app/src/main/res/layout/login_and_singup.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Ronit/AndroidDevelopmentCourse/LoginWithKotlin/app/src/main/res/layout/signup.xml" value="0.30451127819548873" />
+        <entry key="..\:/Users/Ronit/AndroidDevelopmentCourse/LoginWithKotlin/app/src/main/res/layout/signup_activity_1.xml" value="0.8800000000000001" />
+        <entry key="..\:/Users/Ronit/AndroidDevelopmentCourse/LoginWithKotlin/app/src/main/res/layout/signup_activity_2.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Ronit/AndroidDevelopmentCourse/LoginWithKotlin/app/src/main/res/mipmap-anydpi-v26/avatar.xml" value="0.1" />
+        <entry key="..\:/Users/Ronit/AndroidDevelopmentCourse/LoginWithKotlin/app/src/main/res/mipmap-anydpi-v26/circle_add_image.xml" value="0.2025" />
+        <entry key="..\:/Users/Ronit/AndroidDevelopmentCourse/LoginWithKotlin/app/src/main/res/mipmap-anydpi-v26/circle_no_bg.xml" value="0.2025" />
+        <entry key="..\:/Users/Ronit/AndroidDevelopmentCourse/LoginWithKotlin/app/src/main/res/mipmap-anydpi-v26/planet.xml" value="0.2245" />
+        <entry key="..\:/Users/Ronit/AndroidDevelopmentCourse/LoginWithKotlin/app/src/main/res/mipmap-anydpi-v26/usernamr_avatar.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
