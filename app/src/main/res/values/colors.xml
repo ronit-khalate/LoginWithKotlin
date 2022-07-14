@@ -14,5 +14,5 @@
     <color name="colorTrasparent">#00FFFFFF</color>
     <color name="logingbackend">#DED8D5</color>
     <color name="textgrey">#DED8D5</color>
-    <color name="erro_red">#E60000</color>
+    <color name="erro_red">#F26172</color>
 </resources>
