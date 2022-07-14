@@ -19,6 +19,8 @@ class AddPropfilePicture:AppCompatActivity() {
             intent.type="image/*"
 
             startActivityForResult(intent,100)
+
+            val im=getIntent()
         }
     }
 
@@ -28,6 +30,16 @@ class AddPropfilePicture:AppCompatActivity() {
             val viewPicture=findViewById<ImageView>(R.id.profile_pictute_imageview)
 
             viewPicture.setImageURI(data?.data)
+
+            val result = Intent()
+            result.putExtra("image",data?.data)
+
+            findViewById<Button>(R.id.setPictureButton).setOnClickListener()
+            {
+
+                setResult(RESULT_OK,result)
+
+            }
 
     }
 

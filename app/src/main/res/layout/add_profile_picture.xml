@@ -10,7 +10,7 @@
         android:id="@+id/getPicture"
         android:layout_width="269dp"
         android:layout_height="57dp"
-        android:layout_marginBottom="276dp"
+        android:layout_marginBottom="272dp"
         android:background="@drawable/login_button1"
         android:backgroundTint="@color/dark_black"
         android:fontFamily="@font/jt_marnie_extrabold"
@@ -19,14 +19,30 @@
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/profile_pictute_imageview"
-        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintHorizontal_bias="0.422"
         app:layout_constraintStart_toStartOf="@+id/profile_pictute_imageview" />
+
+
+    <Button
+        android:id="@+id/setPictureButton"
+        android:layout_width="269dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_button1"
+        android:backgroundTint="@color/dark_black"
+        android:fontFamily="@font/jt_marnie_extrabold"
+        android:text="Set Picture"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/getPicture"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/getPicture"
+        app:layout_constraintTop_toBottomOf="@+id/getPicture" />
 
     <ImageView
         android:id="@+id/profile_pictute_imageview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="56dp"
         app:layout_constraintBottom_toTopOf="@+id/getPicture"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
