@@ -44,11 +44,15 @@ class SignupPage1 : AppCompatActivity() {
 
         findViewById<ImageView>(R.id.add_picture).setOnClickListener()
         {
-            startActivity(Intent(this,SignupPage2::class.java))
+            startActivityForResult(Intent(this,AddPropfilePicture::class.java),101)
         }
         findViewById<ImageView>(R.id.add_image_link_icon).setOnClickListener()
         {
-            startActivity(Intent(this,SignupPage2::class.java))
+            startActivityForResult(Intent(this,AddPropfilePicture::class.java),101)
         }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
     }
 }

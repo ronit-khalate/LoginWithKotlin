@@ -42,6 +42,9 @@
         <activity android:name=".SignupPage2"
             android:parentActivityName=".SignupPage1"/>
 
+        <activity android:name=".AddPropfilePicture"
+            android:parentActivityName=".SignupPage1"/>
+
     </application>
 
 </manifest>
