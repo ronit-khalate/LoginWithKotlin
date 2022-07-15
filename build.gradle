@@ -3,9 +3,10 @@
 buildscript {
     repositories {
         google()
+        mavenLocal()
     }
     dependencies {
-        classpath( 'com.google.gms:google-services:4.3.13')
+        classpath  'com.google.gms:google-services:4.3.13'
     }
 }
 plugins {

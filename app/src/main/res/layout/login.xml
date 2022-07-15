@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/userNameEditText"
         android:layout_width="244dp"
         android:layout_height="43dp"
         android:layout_marginTop="108dp"
@@ -39,19 +39,20 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/passwordLoginEditText"
         android:layout_width="244dp"
         android:layout_height="43dp"
         android:textColor="@color/vivid_orange"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/garet_book"
         android:hint="Password"
+        android:clickable="true"
         android:textAlignment="center"
         android:textColorHint="@color/logingbackend"
-        app:layout_constraintEnd_toEndOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="@+id/userNameEditText"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/editText2"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintStart_toStartOf="@+id/userNameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/userNameEditText" />
 
     <TextView
         android:id="@+id/envalid_textview"
@@ -61,11 +62,12 @@
         android:textAlignment="center"
         android:textColor="@color/erro_red"
         app:layout_constraintBottom_toTopOf="@+id/loginbtn2"
-        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="@+id/passwordLoginEditText"
         app:layout_constraintHorizontal_bias="0.459"
-        app:layout_constraintStart_toStartOf="@+id/editText" />
+        app:layout_constraintStart_toStartOf="@+id/passwordLoginEditText" />
 
     <Button
+        android:clickable="true"
         android:id="@+id/loginbtn2"
         android:layout_width="291dp"
         android:layout_height="62dp"
@@ -75,10 +77,10 @@
         android:fontFamily="@font/jt_marnie_extrabold"
         android:text="@string/login"
         android:textSize="19sp"
-        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="@+id/passwordLoginEditText"
         app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintStart_toStartOf="@+id/passwordLoginEditText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLoginEditText" />
 
     <TextView
         android:id="@+id/dontHaveAcc"

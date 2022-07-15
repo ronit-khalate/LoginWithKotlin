@@ -2,11 +2,18 @@ package com.example.loginwithkotlin
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.database.FirebaseDatabase
+
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 
 class SignupPage1 : AppCompatActivity() {
 
+
+    private val dataBaseLink ="https://kotlin-login-70273-default-rtdb.asia-southeast1.firebasedatabase.app/"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.signup_activity_1)
@@ -15,27 +22,11 @@ class SignupPage1 : AppCompatActivity() {
         // click listener of NEXT button
         findViewById<Button>(R.id.next).setOnClickListener()
         {
-            val name :String =findViewById<EditText>(R.id.editText3).text.toString()
-            val userName:String=findViewById<EditText>(R.id.editText4).text.toString()
 
-            if(!name.isEmpty() && userName.length>5) {
-
-                startActivity(Intent(this,SignupPage2::class.java))
-            }
-            else if(name.isEmpty())
+            val userName = findViewById<EditText>(R.id.userNameSignupEditText).text.toString().trim()
+            if(isInfoEntered())
             {
-                /*
-                * tell user to enter text
-                * */
-                Toast.makeText(this,"please enter name",Toast.LENGTH_SHORT).show()
-            }
-            else if(userName.length<5)
-            {
-                /*
-               * tell user to enter text
-               * */
-                Toast.makeText(this,"User name must be greater than 5",Toast.LENGTH_SHORT).show()// .show() must call
-                // to show toast
+                saveInfoToDatabase(getInfo(),userName)
             }
 
         }
@@ -50,9 +41,58 @@ class SignupPage1 : AppCompatActivity() {
         {
             startActivityForResult(Intent(this,AddPropfilePicture::class.java),101)
         }
+
+        findViewById<TextView>(R.id.login).setOnClickListener()
+        {
+            startActivity(Intent(this,Login::class.java))
+        }
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
+    // get info entered by user to save in database
+    private fun getInfo(): UserInfo {
+
+
+        val password = findViewById<EditText>(R.id.passwordSignupEditText).text.toString().trim()
+        val name = findViewById<EditText>(R.id.nameSignupEditText).text.toString().trim()
+
+        return UserInfo( password,name)
+
+    }
+
+    private fun saveInfoToDatabase(user:UserInfo,userName:String)
+    {
+
+        val rootRef = FirebaseDatabase.getInstance(dataBaseLink).reference
+
+        rootRef.child("users").child("loginInfo").child(userName).setValue(user).addOnCompleteListener {
+            Toast.makeText(this,"Sign up Successfully",Toast.LENGTH_SHORT).show()
+            startSiguPage2()
+
+        }
+
+
+    }
+
+    // check if user entered all the info or not
+
+    fun isInfoEntered():Boolean
+    {
+        val password = findViewById<EditText>(R.id.passwordSignupEditText).text.toString()
+        val name = findViewById<EditText>(R.id.nameSignupEditText).text.toString()
+        val userName = findViewById<EditText>(R.id.userNameSignupEditText).text.toString()
+
+        if(!password.isEmpty()&&!name.isEmpty()&&!userName.isEmpty())
+        {
+            return true
+        }
+        else
+        {
+            Toast.makeText(this,"Please enter all infromation",Toast.LENGTH_SHORT)
+        }
+        return false
+    }
+    private fun startSiguPage2 ()
+    {
+        startActivity(Intent(this,SignupPage2::class.java))
     }
 }
